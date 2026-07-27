@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>Rein</title>
+        <item>
+            <title>0.8.0</title>
+            <pubDate>Mon, 27 Jul 2026 22:12:03 +1200</pubDate>
+            <sparkle:version>11</sparkle:version>
+            <sparkle:shortVersionString>0.8.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <enclosure url="https://github.com/lukedavid2/rein-releases/releases/download/v0.8.0/Rein-0.8.0.dmg" length="66129032" type="application/octet-stream" sparkle:edSignature="o6qIG/7OJW0v/2eJvW/bdX+W0Txgwa6uCvzN9N/c5Q+A2qWB4ESSj4bvjqElncORpYU3V5G0H7jeAPDpm3jsBQ=="/>
+        </item>
+    </channel>
+</rss>
