@@ -3,6 +3,20 @@
     <channel>
         <title>Rein</title>
         <item>
+            <title>0.8.5</title>
+            <pubDate>Tue, 04 Aug 2026 14:03:26 +1200</pubDate>
+            <sparkle:version>16</sparkle:version>
+            <sparkle:shortVersionString>0.8.5</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description><![CDATA[<style>:root{color-scheme:light dark}.rn{font:13px/1.5 -apple-system,"SF Pro Text",sans-serif;color:#1d1d1f;margin:4px 2px}.rn h1{font-size:16px;margin:0 0 10px}.rn h2{font-size:14px;margin:14px 0 6px}.rn ul{margin:6px 0;padding-left:20px}.rn li{margin-bottom:7px}.rn code{font-family:ui-monospace,Menlo,monospace;font-size:12px}@media(prefers-color-scheme:dark){.rn{color:#e8e8ed}}</style><div class="rn"><h1>Rein 0.8.5</h1>
+<ul>
+<li><b>No more silent wait when casting.</b> Full-quality casting converts your file first (30–60 seconds for a film) — the player and menu-bar controls now appear immediately with a "Preparing full quality…" status, instead of nothing happening until playback starts.</li>
+</ul></div>
+]]></description>
+            <enclosure url="https://github.com/lukedavid2/rein-releases/releases/download/updates/Rein-0.8.5.dmg" length="66232066" type="application/octet-stream" sparkle:edSignature="gCil9ILp4AqkRyxCp+HgYrLWYkvp+hP0w6wkhifRSImDzvHW1BaEi3Uq1/JnN7SNLX5hIKkXt+E82cxiP1ICAg=="/>
+        </item>
+        <item>
             <title>0.8.4</title>
             <pubDate>Tue, 04 Aug 2026 13:43:24 +1200</pubDate>
             <sparkle:version>15</sparkle:version>
@@ -31,22 +45,6 @@
 </ul></div>
 ]]></description>
             <enclosure url="https://github.com/lukedavid2/rein-releases/releases/download/updates/Rein-0.8.2.dmg" length="66139778" type="application/octet-stream" sparkle:edSignature="4x80CpfKyM52KSWa5CYZedzEJ+Bk/ZWfSlMm+Gixale3eFoNAeL6AZn8AhOikjXsPCfm2vBXo4beORFlam0hCQ=="/>
-        </item>
-        <item>
-            <title>0.8.1</title>
-            <pubDate>Mon, 27 Jul 2026 22:29:05 +1200</pubDate>
-            <sparkle:version>12</sparkle:version>
-            <sparkle:shortVersionString>0.8.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<style>:root{color-scheme:light dark}.rn{font:13px/1.5 -apple-system,"SF Pro Text",sans-serif;color:#1d1d1f;margin:4px 2px}.rn h1{font-size:16px;margin:0 0 10px}.rn h2{font-size:14px;margin:14px 0 6px}.rn ul{margin:6px 0;padding-left:20px}.rn li{margin-bottom:7px}.rn code{font-family:ui-monospace,Menlo,monospace;font-size:12px}@media(prefers-color-scheme:dark){.rn{color:#e8e8ed}}</style><div class="rn"><h1>Rein 0.8.1</h1>
-<ul>
-<li><b>Quit from the menu bar.</b> Right-click the Rein icon for a quick menu: Open Rein, Reset Everything to macOS Auto, and Quit Rein.</li>
-<li><b>Quit from Settings.</b> A Quit row now lives in Settings → General, with a plain statement of what happens when Rein closes.</li>
-<li><b>Update checks are on by default.</b> The off-switch is in Settings → Updates.</li>
-</ul></div>
-]]></description>
-            <enclosure url="https://github.com/lukedavid2/rein-releases/releases/download/updates/Rein-0.8.1.dmg" length="66135027" type="application/octet-stream" sparkle:edSignature="DOn7O2+gZgyrG9nJoyycb7aixCt5fc1Ut67MDg5dCYcRw6hnFn8hpzc476Wt94xGfoAVGdSI9cRN8V6/BbPjCA=="/>
         </item>
     </channel>
 </rss>
