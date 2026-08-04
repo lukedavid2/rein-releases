@@ -3,6 +3,20 @@
     <channel>
         <title>Rein</title>
         <item>
+            <title>0.8.6</title>
+            <pubDate>Tue, 04 Aug 2026 14:21:23 +1200</pubDate>
+            <sparkle:version>17</sparkle:version>
+            <sparkle:shortVersionString>0.8.6</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description><![CDATA[<style>:root{color-scheme:light dark}.rn{font:13px/1.5 -apple-system,"SF Pro Text",sans-serif;color:#1d1d1f;margin:4px 2px}.rn h1{font-size:16px;margin:0 0 10px}.rn h2{font-size:14px;margin:14px 0 6px}.rn ul{margin:6px 0;padding-left:20px}.rn li{margin-bottom:7px}.rn code{font-family:ui-monospace,Menlo,monospace;font-size:12px}@media(prefers-color-scheme:dark){.rn{color:#e8e8ed}}</style><div class="rn"><h1>Rein 0.8.6</h1>
+<ul>
+<li><b>Fixed a wrong automatic quality drop.</b> Starting a new cast could misread the previous session's state as a playback failure, silently blacklist the TV from full quality, and land at 720p. The stale signal is now cleared when a cast starts, and any wrongly-remembered blacklist heals on your next cast.</li>
+</ul></div>
+]]></description>
+            <enclosure url="https://github.com/lukedavid2/rein-releases/releases/download/updates/Rein-0.8.6.dmg" length="66232711" type="application/octet-stream" sparkle:edSignature="MrjhfdOfJI+yBNgKneAK+VMQJ8SnlpZpV8hwTVDD/krrVwlYmkatfL2T/ADpLyzLjHh8fgIz1OuJhx0hhHcbBg=="/>
+        </item>
+        <item>
             <title>0.8.5</title>
             <pubDate>Tue, 04 Aug 2026 14:03:26 +1200</pubDate>
             <sparkle:version>16</sparkle:version>
@@ -31,20 +45,6 @@
 </ul></div>
 ]]></description>
             <enclosure url="https://github.com/lukedavid2/rein-releases/releases/download/updates/Rein-0.8.4.dmg" length="66232033" type="application/octet-stream" sparkle:edSignature="vWcWh13C3KsnayMWgBSD8ZKDryq9YuZrf6RzBC5bQwQitchkzjln3/jI5+CKGB9ela6lLbPIGbb0TYVQQZ3WDA=="/>
-        </item>
-        <item>
-            <title>0.8.2</title>
-            <pubDate>Mon, 27 Jul 2026 22:38:52 +1200</pubDate>
-            <sparkle:version>13</sparkle:version>
-            <sparkle:shortVersionString>0.8.2</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<style>:root{color-scheme:light dark}.rn{font:13px/1.5 -apple-system,"SF Pro Text",sans-serif;color:#1d1d1f;margin:4px 2px}.rn h1{font-size:16px;margin:0 0 10px}.rn h2{font-size:14px;margin:14px 0 6px}.rn ul{margin:6px 0;padding-left:20px}.rn li{margin-bottom:7px}.rn code{font-family:ui-monospace,Menlo,monospace;font-size:12px}@media(prefers-color-scheme:dark){.rn{color:#e8e8ed}}</style><div class="rn"><h1>Rein 0.8.2</h1>
-<ul>
-<li><b>The Updates card now tells the truth.</b> "Last checked" updates the moment a check finishes (it used to stay on "Never checked"), the caption shows "Checking…" while a check runs, and the button disables until it's done.</li>
-</ul></div>
-]]></description>
-            <enclosure url="https://github.com/lukedavid2/rein-releases/releases/download/updates/Rein-0.8.2.dmg" length="66139778" type="application/octet-stream" sparkle:edSignature="4x80CpfKyM52KSWa5CYZedzEJ+Bk/ZWfSlMm+Gixale3eFoNAeL6AZn8AhOikjXsPCfm2vBXo4beORFlam0hCQ=="/>
         </item>
     </channel>
 </rss>
