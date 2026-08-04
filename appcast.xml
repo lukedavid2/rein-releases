@@ -3,6 +3,22 @@
     <channel>
         <title>Rein</title>
         <item>
+            <title>0.8.4</title>
+            <pubDate>Tue, 04 Aug 2026 13:43:24 +1200</pubDate>
+            <sparkle:version>15</sparkle:version>
+            <sparkle:shortVersionString>0.8.4</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description><![CDATA[<style>:root{color-scheme:light dark}.rn{font:13px/1.5 -apple-system,"SF Pro Text",sans-serif;color:#1d1d1f;margin:4px 2px}.rn h1{font-size:16px;margin:0 0 10px}.rn h2{font-size:14px;margin:14px 0 6px}.rn ul{margin:6px 0;padding-left:20px}.rn li{margin-bottom:7px}.rn code{font-family:ui-monospace,Menlo,monospace;font-size:12px}@media(prefers-color-scheme:dark){.rn{color:#e8e8ed}}</style><div class="rn"><h1>Rein 0.8.4</h1>
+<ul>
+<li><b>Cast controls in the menu bar.</b> While a video casts, the Rein panel shows a transport: play/pause, a scrubber with elapsed/total time, and the TV volume — no need to open the full window.</li>
+<li><b>Your keyboard's play/pause key now controls the cast.</b> Rein registers as the Mac's Now Playing app during a cast, so the ⏯ media key, AirPods taps, and Control Center's transport all drive the Chromecast — including scrubbing from Control Center.</li>
+<li>Also in this update (0.8.3): casting sound now works on every TV — Dolby audio converts to AAC automatically, with a per-device "Dolby passthrough" opt-in for soundbar setups.</li>
+</ul></div>
+]]></description>
+            <enclosure url="https://github.com/lukedavid2/rein-releases/releases/download/updates/Rein-0.8.4.dmg" length="66232033" type="application/octet-stream" sparkle:edSignature="vWcWh13C3KsnayMWgBSD8ZKDryq9YuZrf6RzBC5bQwQitchkzjln3/jI5+CKGB9ela6lLbPIGbb0TYVQQZ3WDA=="/>
+        </item>
+        <item>
             <title>0.8.2</title>
             <pubDate>Mon, 27 Jul 2026 22:38:52 +1200</pubDate>
             <sparkle:version>13</sparkle:version>
@@ -31,21 +47,6 @@
 </ul></div>
 ]]></description>
             <enclosure url="https://github.com/lukedavid2/rein-releases/releases/download/updates/Rein-0.8.1.dmg" length="66135027" type="application/octet-stream" sparkle:edSignature="DOn7O2+gZgyrG9nJoyycb7aixCt5fc1Ut67MDg5dCYcRw6hnFn8hpzc476Wt94xGfoAVGdSI9cRN8V6/BbPjCA=="/>
-        </item>
-        <item>
-            <title>0.8.0</title>
-            <pubDate>Mon, 27 Jul 2026 22:12:03 +1200</pubDate>
-            <sparkle:version>11</sparkle:version>
-            <sparkle:shortVersionString>0.8.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<style>:root{color-scheme:light dark}.rn{font:13px/1.5 -apple-system,"SF Pro Text",sans-serif;color:#1d1d1f;margin:4px 2px}.rn h1{font-size:16px;margin:0 0 10px}.rn h2{font-size:14px;margin:14px 0 6px}.rn ul{margin:6px 0;padding-left:20px}.rn li{margin-bottom:7px}.rn code{font-family:ui-monospace,Menlo,monospace;font-size:12px}@media(prefers-color-scheme:dark){.rn{color:#e8e8ed}}</style><div class="rn"><h1>Rein 0.8.0</h1>
-<ul>
-<li><b>Rein now updates itself.</b> Once a day it checks GitHub for a newer version and offers a one-click install — no more downloading DMGs by hand. Turn it off any time in Settings → Updates.</li>
-<li><b>Notarized by Apple.</b> Fresh downloads open with no security warning.</li>
-</ul></div>
-]]></description>
-            <enclosure url="https://github.com/lukedavid2/rein-releases/releases/download/updates/Rein-0.8.0.dmg" length="66129032" type="application/octet-stream" sparkle:edSignature="o6qIG/7OJW0v/2eJvW/bdX+W0Txgwa6uCvzN9N/c5Q+A2qWB4ESSj4bvjqElncORpYU3V5G0H7jeAPDpm3jsBQ=="/>
         </item>
     </channel>
 </rss>
