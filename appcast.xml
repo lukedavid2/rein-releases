@@ -3,6 +3,20 @@
     <channel>
         <title>Rein</title>
         <item>
+            <title>0.8.9</title>
+            <pubDate>Tue, 11 Aug 2026 10:29:11 +1200</pubDate>
+            <sparkle:version>20</sparkle:version>
+            <sparkle:shortVersionString>0.8.9</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description><![CDATA[<style>:root{color-scheme:light dark}.rn{font:13px/1.5 -apple-system,"SF Pro Text",sans-serif;color:#1d1d1f;margin:4px 2px}.rn h1{font-size:16px;margin:0 0 10px}.rn h2{font-size:14px;margin:14px 0 6px}.rn ul{margin:6px 0;padding-left:20px}.rn li{margin-bottom:7px}.rn code{font-family:ui-monospace,Menlo,monospace;font-size:12px}@media(prefers-color-scheme:dark){.rn{color:#e8e8ed}}</style><div class="rn"><h1>Rein 0.8.9</h1>
+<ul>
+<li><b>Menu bar tidy actually shows up now.</b> In 0.8.8, enabling "Hide extra menu bar icons" collapsed the hidden section instantly and could strand Rein's own controls off-screen — so nothing visibly happened. Enabling it now immediately shows the ⋮ divider and › chevron near the top-right of the menu bar, starting revealed so you can ⌘-drag icons behind the divider first. Rein also detects and repairs the controls if they were saved in the wrong positions.</li>
+</ul></div>
+]]></description>
+            <enclosure url="https://github.com/lukedavid2/rein-releases/releases/download/updates/Rein-0.8.9.dmg" length="66250298" type="application/octet-stream" sparkle:edSignature="OBcl+hCfa+n7y/zhtIlDdkKdol3bZtvZhPtJW6u6gT8tNj9x6obZxL5hphd6Y4TEQRZnzj7zWVZRcmKl708OAA=="/>
+        </item>
+        <item>
             <title>0.8.8</title>
             <pubDate>Tue, 11 Aug 2026 09:15:03 +1200</pubDate>
             <sparkle:version>19</sparkle:version>
@@ -29,20 +43,6 @@
 </ul></div>
 ]]></description>
             <enclosure url="https://github.com/lukedavid2/rein-releases/releases/download/updates/Rein-0.8.7.dmg" length="66220331" type="application/octet-stream" sparkle:edSignature="Jlx0EMtHdbmi6ppZjdNg4SDUmiTuSY4HjZYx5vRK/RuTZY2RSwQAIl+a1jXph8r6/0rPJ3Zd96Hzq8WtS6Z5Dw=="/>
-        </item>
-        <item>
-            <title>0.8.6</title>
-            <pubDate>Tue, 04 Aug 2026 14:21:23 +1200</pubDate>
-            <sparkle:version>17</sparkle:version>
-            <sparkle:shortVersionString>0.8.6</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<style>:root{color-scheme:light dark}.rn{font:13px/1.5 -apple-system,"SF Pro Text",sans-serif;color:#1d1d1f;margin:4px 2px}.rn h1{font-size:16px;margin:0 0 10px}.rn h2{font-size:14px;margin:14px 0 6px}.rn ul{margin:6px 0;padding-left:20px}.rn li{margin-bottom:7px}.rn code{font-family:ui-monospace,Menlo,monospace;font-size:12px}@media(prefers-color-scheme:dark){.rn{color:#e8e8ed}}</style><div class="rn"><h1>Rein 0.8.6</h1>
-<ul>
-<li><b>Fixed a wrong automatic quality drop.</b> Starting a new cast could misread the previous session's state as a playback failure, silently blacklist the TV from full quality, and land at 720p. The stale signal is now cleared when a cast starts, and any wrongly-remembered blacklist heals on your next cast.</li>
-</ul></div>
-]]></description>
-            <enclosure url="https://github.com/lukedavid2/rein-releases/releases/download/updates/Rein-0.8.6.dmg" length="66232711" type="application/octet-stream" sparkle:edSignature="MrjhfdOfJI+yBNgKneAK+VMQJ8SnlpZpV8hwTVDD/krrVwlYmkatfL2T/ADpLyzLjHh8fgIz1OuJhx0hhHcbBg=="/>
         </item>
     </channel>
 </rss>
