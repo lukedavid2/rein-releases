@@ -3,6 +3,20 @@
     <channel>
         <title>Rein</title>
         <item>
+            <title>0.8.15</title>
+            <pubDate>Wed, 26 Aug 2026 08:05:59 +1200</pubDate>
+            <sparkle:version>26</sparkle:version>
+            <sparkle:shortVersionString>0.8.15</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description><![CDATA[<style>:root{color-scheme:light dark}.rn{font:13px/1.5 -apple-system,"SF Pro Text",sans-serif;color:#1d1d1f;margin:4px 2px}.rn h1{font-size:16px;margin:0 0 10px}.rn h2{font-size:14px;margin:14px 0 6px}.rn ul{margin:6px 0;padding-left:20px}.rn li{margin-bottom:7px}.rn code{font-family:ui-monospace,Menlo,monospace;font-size:12px}@media(prefers-color-scheme:dark){.rn{color:#e8e8ed}}</style><div class="rn"><h1>Rein 0.8.15</h1>
+<ul>
+<li><b>The crash fix, properly this time.</b> 0.8.14 guarded one bad value macOS can report for the tidy divider's window, but your Mac produced a second kind we've now seen in the wild (a window id too large to be real). Rein now treats every impossible window id as "skip this pass" instead of trusting the system's paperwork — there is no longer any code path that can trip over it.</li>
+</ul></div>
+]]></description>
+            <enclosure url="https://github.com/lukedavid2/rein-releases/releases/download/updates/Rein-0.8.15.dmg" length="66257522" type="application/octet-stream" sparkle:edSignature="4QCzGdAQyPDBA4Hv2CaMmXoXNp4jMS+FshIdigUh3kWapWOlTu9i9EmZgWDYHX/Lvm7OOc+tt81ab/n++hy7CA=="/>
+        </item>
+        <item>
             <title>0.8.14</title>
             <pubDate>Tue, 25 Aug 2026 22:38:03 +1200</pubDate>
             <sparkle:version>25</sparkle:version>
@@ -30,22 +44,6 @@
 </ul></div>
 ]]></description>
             <enclosure url="https://github.com/lukedavid2/rein-releases/releases/download/updates/Rein-0.8.13.dmg" length="66359449" type="application/octet-stream" sparkle:edSignature="EidX2t9VFbZOFVTa5oJdH6rQj6BrrkQZk0GDfK7hkcjIftmet++Xe/PYfEvhrt1VQmFAqQyjc9+0McpljzQWBg=="/>
-        </item>
-        <item>
-            <title>0.8.12</title>
-            <pubDate>Tue, 25 Aug 2026 17:44:40 +1200</pubDate>
-            <sparkle:version>23</sparkle:version>
-            <sparkle:shortVersionString>0.8.12</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<style>:root{color-scheme:light dark}.rn{font:13px/1.5 -apple-system,"SF Pro Text",sans-serif;color:#1d1d1f;margin:4px 2px}.rn h1{font-size:16px;margin:0 0 10px}.rn h2{font-size:14px;margin:14px 0 6px}.rn ul{margin:6px 0;padding-left:20px}.rn li{margin-bottom:7px}.rn code{font-family:ui-monospace,Menlo,monospace;font-size:12px}@media(prefers-color-scheme:dark){.rn{color:#e8e8ed}}</style><div class="rn"><h1>Rein 0.8.12</h1>
-<ul>
-<li><b>Menu bar tidy now holds its arrangement — permanently.</b> Two changes behind one fix:</li>
-</ul>
-<p>  - Rein now keeps its own record of where the ⋮ divider and ‹ chevron belong, and restores them there on every launch. (macOS's own position memory was being wiped by its quirks — the reason the divider kept "resetting" after a restart.)</p>
-<p>  - Rein now remembers *which* icons you tucked away. If one escapes back onto the visible bar — after a restart, a display wake, or an app re-creating its icon mid-session — Rein briefly reveals the hidden section, slides the stray back behind the divider, and tucks everything away again, automatically. This needs Accessibility access (already granted if you use Rein Remote's mouse control); without it, Rein tells you once in the Activity log and leaves things be.</p></div>
-]]></description>
-            <enclosure url="https://github.com/lukedavid2/rein-releases/releases/download/updates/Rein-0.8.12.dmg" length="66342670" type="application/octet-stream" sparkle:edSignature="ybnow6ODmHwnXLBZEkrEPJDi6fPM6YlgtvG1wrhhKOC5qmS4ZqAGXf7ORLm1grf9dfzz+lfn5WuuvJ4nX4vdAw=="/>
         </item>
     </channel>
 </rss>
