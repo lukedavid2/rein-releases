@@ -3,6 +3,20 @@
     <channel>
         <title>Rein</title>
         <item>
+            <title>0.8.14</title>
+            <pubDate>Tue, 25 Aug 2026 22:38:03 +1200</pubDate>
+            <sparkle:version>25</sparkle:version>
+            <sparkle:shortVersionString>0.8.14</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description><![CDATA[<style>:root{color-scheme:light dark}.rn{font:13px/1.5 -apple-system,"SF Pro Text",sans-serif;color:#1d1d1f;margin:4px 2px}.rn h1{font-size:16px;margin:0 0 10px}.rn h2{font-size:14px;margin:14px 0 6px}.rn ul{margin:6px 0;padding-left:20px}.rn li{margin-bottom:7px}.rn code{font-family:ui-monospace,Menlo,monospace;font-size:12px}@media(prefers-color-scheme:dark){.rn{color:#e8e8ed}}</style><div class="rn"><h1>Rein 0.8.14</h1>
+<ul>
+<li><b>Fixed the 0.8.13 crash.</b> Rein could quit itself minutes after launch (typically right after a display change or wake) when the menu bar tidy checked its divider while the divider's window was momentarily off-screen. If Rein kept disappearing on you and your hidden icons came back, this was why — update and it stays running.</li>
+</ul></div>
+]]></description>
+            <enclosure url="https://github.com/lukedavid2/rein-releases/releases/download/updates/Rein-0.8.14.dmg" length="66891505" type="application/octet-stream" sparkle:edSignature="hPfTIzZiDjXJKPdG6IF6t8QCLlXiza0RmzEfrwRvYKJCkO/M72nD7A1ljIz39KLJfyBGv3Ec3l8QF68+5ei5Dg=="/>
+        </item>
+        <item>
             <title>0.8.13</title>
             <pubDate>Tue, 25 Aug 2026 20:25:01 +1200</pubDate>
             <sparkle:version>24</sparkle:version>
@@ -32,31 +46,6 @@
 <p>  - Rein now remembers *which* icons you tucked away. If one escapes back onto the visible bar — after a restart, a display wake, or an app re-creating its icon mid-session — Rein briefly reveals the hidden section, slides the stray back behind the divider, and tucks everything away again, automatically. This needs Accessibility access (already granted if you use Rein Remote's mouse control); without it, Rein tells you once in the Activity log and leaves things be.</p></div>
 ]]></description>
             <enclosure url="https://github.com/lukedavid2/rein-releases/releases/download/updates/Rein-0.8.12.dmg" length="66342670" type="application/octet-stream" sparkle:edSignature="ybnow6ODmHwnXLBZEkrEPJDi6fPM6YlgtvG1wrhhKOC5qmS4ZqAGXf7ORLm1grf9dfzz+lfn5WuuvJ4nX4vdAw=="/>
-        </item>
-        <item>
-            <title>0.8.11</title>
-            <pubDate>Fri, 21 Aug 2026 15:06:33 +1200</pubDate>
-            <sparkle:version>22</sparkle:version>
-            <sparkle:shortVersionString>0.8.11</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<style>:root{color-scheme:light dark}.rn{font:13px/1.5 -apple-system,"SF Pro Text",sans-serif;color:#1d1d1f;margin:4px 2px}.rn h1{font-size:16px;margin:0 0 10px}.rn h2{font-size:14px;margin:14px 0 6px}.rn ul{margin:6px 0;padding-left:20px}.rn li{margin-bottom:7px}.rn code{font-family:ui-monospace,Menlo,monospace;font-size:12px}@media(prefers-color-scheme:dark){.rn{color:#e8e8ed}}</style><div class="rn"><h1>Rein 0.8.11</h1>
-<ul>
-<li><b>Rein Remote reconnects reliably.</b> A network blip could send the Mac's relay connection into a</li>
-</ul>
-<p>  silent churn loop — the iPhone app then searched for the Mac forever. The connection layer now</p>
-<p>  recovers from drops cleanly, and both apps detect a "zombie" link (connected in name only) within</p>
-<p>  seconds and rejoin on their own. After updating, open Rein's window, pick <b>Remote</b> in the sidebar,</p>
-<p>  and tap <b>Redeploy</b> once so your relay picks up the matching server-side fix.</p>
-<ul>
-<li><b>Hidden menu bar icons stay hidden.</b> Icons tucked behind the ⋮ divider could reappear after the</li>
-</ul>
-<p>  display slept, a monitor was plugged in, or the screen resolution changed — and on wider displays</p>
-<p>  the reveal chevron itself could vanish into the hidden section. The hidden section now re-asserts</p>
-<p>  itself after every such event, sizes itself to your actual displays, and self-repairs if macOS</p>
-<p>  shuffles the controls out of order.</p></div>
-]]></description>
-            <enclosure url="https://github.com/lukedavid2/rein-releases/releases/download/updates/Rein-0.8.11.dmg" length="66914167" type="application/octet-stream" sparkle:edSignature="aUSDDejgfmFkmCb0v5LXhrMQxue33jQjJ7nkPxQRksrnbGPcN5qSWycKU/4kQ+aksoTKGb3Gxd3kSYM/lOfxBg=="/>
         </item>
     </channel>
 </rss>
