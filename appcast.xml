@@ -3,6 +3,21 @@
     <channel>
         <title>Rein</title>
         <item>
+            <title>0.8.13</title>
+            <pubDate>Tue, 25 Aug 2026 20:25:01 +1200</pubDate>
+            <sparkle:version>24</sparkle:version>
+            <sparkle:shortVersionString>0.8.13</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description><![CDATA[<style>:root{color-scheme:light dark}.rn{font:13px/1.5 -apple-system,"SF Pro Text",sans-serif;color:#1d1d1f;margin:4px 2px}.rn h1{font-size:16px;margin:0 0 10px}.rn h2{font-size:14px;margin:14px 0 6px}.rn ul{margin:6px 0;padding-left:20px}.rn li{margin-bottom:7px}.rn code{font-family:ui-monospace,Menlo,monospace;font-size:12px}@media(prefers-color-scheme:dark){.rn{color:#e8e8ed}}</style><div class="rn"><h1>Rein 0.8.13</h1>
+<ul>
+<li><b>Menu bar tidy no longer touches your mouse — ever.</b> Tucking a stray icon back now uses the same window-targeted technique as the Ice app: the reposition happens invisibly, behind the collapsed divider, with no reveal, no flicker, and your cursor exactly where you left it. Enforcement also runs more often (every 30 seconds plus after wakes and app launches), so escaped icons disappear again quickly.</li>
+<li><b>Fixed: visible icons being dragged into hiding.</b> A scrambled menu-bar layout during the revealed window could be mis-recorded as "you hid everything". Rein now only records your arrangement when you collapse the divider yourself, and rejects capture snapshots that don't look like real intent.</li>
+</ul></div>
+]]></description>
+            <enclosure url="https://github.com/lukedavid2/rein-releases/releases/download/updates/Rein-0.8.13.dmg" length="66359449" type="application/octet-stream" sparkle:edSignature="EidX2t9VFbZOFVTa5oJdH6rQj6BrrkQZk0GDfK7hkcjIftmet++Xe/PYfEvhrt1VQmFAqQyjc9+0McpljzQWBg=="/>
+        </item>
+        <item>
             <title>0.8.12</title>
             <pubDate>Tue, 25 Aug 2026 17:44:40 +1200</pubDate>
             <sparkle:version>23</sparkle:version>
@@ -42,20 +57,6 @@
 <p>  shuffles the controls out of order.</p></div>
 ]]></description>
             <enclosure url="https://github.com/lukedavid2/rein-releases/releases/download/updates/Rein-0.8.11.dmg" length="66914167" type="application/octet-stream" sparkle:edSignature="aUSDDejgfmFkmCb0v5LXhrMQxue33jQjJ7nkPxQRksrnbGPcN5qSWycKU/4kQ+aksoTKGb3Gxd3kSYM/lOfxBg=="/>
-        </item>
-        <item>
-            <title>0.8.10</title>
-            <pubDate>Tue, 11 Aug 2026 10:37:12 +1200</pubDate>
-            <sparkle:version>21</sparkle:version>
-            <sparkle:shortVersionString>0.8.10</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<style>:root{color-scheme:light dark}.rn{font:13px/1.5 -apple-system,"SF Pro Text",sans-serif;color:#1d1d1f;margin:4px 2px}.rn h1{font-size:16px;margin:0 0 10px}.rn h2{font-size:14px;margin:14px 0 6px}.rn ul{margin:6px 0;padding-left:20px}.rn li{margin-bottom:7px}.rn code{font-family:ui-monospace,Menlo,monospace;font-size:12px}@media(prefers-color-scheme:dark){.rn{color:#e8e8ed}}</style><div class="rn"><h1>Rein 0.8.10</h1>
-<ul>
-<li><b>A clearer tuck-away arrow.</b> The menu bar tidy toggle now uses a bolder ‹ › arrowhead instead of the slim compact chevron, which read as a straight line next to the ⋮ divider.</li>
-</ul></div>
-]]></description>
-            <enclosure url="https://github.com/lukedavid2/rein-releases/releases/download/updates/Rein-0.8.10.dmg" length="66250524" type="application/octet-stream" sparkle:edSignature="l9vjwaaRJLoMZiRmpwV3j1nSGeIZMCJwAvdmKQzXlibz9nipxkU+5LoYaYiZ81krPwHzik/1puQ9BZtuachFAA=="/>
         </item>
     </channel>
 </rss>
