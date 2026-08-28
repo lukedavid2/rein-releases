@@ -3,6 +3,36 @@
     <channel>
         <title>Rein</title>
         <item>
+            <title>0.9.0</title>
+            <pubDate>Sat, 29 Aug 2026 11:32:45 +1200</pubDate>
+            <sparkle:version>27</sparkle:version>
+            <sparkle:shortVersionString>0.9.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description><![CDATA[<style>:root{color-scheme:light dark}.rn{font:13px/1.5 -apple-system,"SF Pro Text",sans-serif;color:#1d1d1f;margin:4px 2px}.rn h1{font-size:16px;margin:0 0 10px}.rn h2{font-size:14px;margin:14px 0 6px}.rn ul{margin:6px 0;padding-left:20px}.rn li{margin-bottom:7px}.rn code{font-family:ui-monospace,Menlo,monospace;font-size:12px}@media(prefers-color-scheme:dark){.rn{color:#e8e8ed}}</style><div class="rn"><h1>Rein 0.9.0</h1>
+<p>Three new features, all asked for by real remote-desk use:</p>
+<ul>
+<li><b>Privacy screen.</b> Leave your Mac on for Rein Remote and lock it in person: one click in the</li>
+</ul>
+<p>  menu-bar panel (or a toggle on the phone) blacks out every screen and ignores the Mac's own</p>
+<p>  keyboard, trackpad and mouse — while your phone keeps seeing and controlling the real desktop.</p>
+<p>  Unlock by typing your passcode at the Mac (set it in Rein → Remote) or from the phone. Quitting</p>
+<p>  or restarting Rein always returns the Mac to normal — the lock can never strand you.</p>
+<ul>
+<li><b>Brightness keys drive Rein.</b> The keyboard brightness keys now adjust Rein's unified</li>
+</ul>
+<p>  brightness (with a matching on-screen indicator), so the keys and Rein's sliders can no longer</p>
+<p>  disagree about how bright your display is. ⌥⇧ gives fine steps, and the keys act on the display</p>
+<p>  under your pointer. Turn it off in Displays if you prefer the native behavior.</p>
+<ul>
+<li><b>Fan control in the menu-bar panel.</b> Auto/Manual and an RPM slider now live right under the</li>
+</ul>
+<p>  Fans row in the quick panel, next to the live CPU temperature — no need to open the full window</p>
+<p>  for a quick manual override.</p></div>
+]]></description>
+            <enclosure url="https://github.com/lukedavid2/rein-releases/releases/download/updates/Rein-0.9.0.dmg" length="66404301" type="application/octet-stream" sparkle:edSignature="1kdwPUoBB1VtfBI6ot7CUtVbbFj5K3tQp8A/4Vl5a94KHvFgQA+f/XBzdHRxy9d8DCp8Er2hhl96n1CZybu+DA=="/>
+        </item>
+        <item>
             <title>0.8.15</title>
             <pubDate>Wed, 26 Aug 2026 08:05:59 +1200</pubDate>
             <sparkle:version>26</sparkle:version>
@@ -29,21 +59,6 @@
 </ul></div>
 ]]></description>
             <enclosure url="https://github.com/lukedavid2/rein-releases/releases/download/updates/Rein-0.8.14.dmg" length="66891505" type="application/octet-stream" sparkle:edSignature="hPfTIzZiDjXJKPdG6IF6t8QCLlXiza0RmzEfrwRvYKJCkO/M72nD7A1ljIz39KLJfyBGv3Ec3l8QF68+5ei5Dg=="/>
-        </item>
-        <item>
-            <title>0.8.13</title>
-            <pubDate>Tue, 25 Aug 2026 20:25:01 +1200</pubDate>
-            <sparkle:version>24</sparkle:version>
-            <sparkle:shortVersionString>0.8.13</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<style>:root{color-scheme:light dark}.rn{font:13px/1.5 -apple-system,"SF Pro Text",sans-serif;color:#1d1d1f;margin:4px 2px}.rn h1{font-size:16px;margin:0 0 10px}.rn h2{font-size:14px;margin:14px 0 6px}.rn ul{margin:6px 0;padding-left:20px}.rn li{margin-bottom:7px}.rn code{font-family:ui-monospace,Menlo,monospace;font-size:12px}@media(prefers-color-scheme:dark){.rn{color:#e8e8ed}}</style><div class="rn"><h1>Rein 0.8.13</h1>
-<ul>
-<li><b>Menu bar tidy no longer touches your mouse — ever.</b> Tucking a stray icon back now uses the same window-targeted technique as the Ice app: the reposition happens invisibly, behind the collapsed divider, with no reveal, no flicker, and your cursor exactly where you left it. Enforcement also runs more often (every 30 seconds plus after wakes and app launches), so escaped icons disappear again quickly.</li>
-<li><b>Fixed: visible icons being dragged into hiding.</b> A scrambled menu-bar layout during the revealed window could be mis-recorded as "you hid everything". Rein now only records your arrangement when you collapse the divider yourself, and rejects capture snapshots that don't look like real intent.</li>
-</ul></div>
-]]></description>
-            <enclosure url="https://github.com/lukedavid2/rein-releases/releases/download/updates/Rein-0.8.13.dmg" length="66359449" type="application/octet-stream" sparkle:edSignature="EidX2t9VFbZOFVTa5oJdH6rQj6BrrkQZk0GDfK7hkcjIftmet++Xe/PYfEvhrt1VQmFAqQyjc9+0McpljzQWBg=="/>
         </item>
     </channel>
 </rss>
