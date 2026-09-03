@@ -3,6 +3,31 @@
     <channel>
         <title>Rein</title>
         <item>
+            <title>0.9.1</title>
+            <pubDate>Thu, 03 Sep 2026 17:44:35 +1200</pubDate>
+            <sparkle:version>28</sparkle:version>
+            <sparkle:shortVersionString>0.9.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description><![CDATA[<style>:root{color-scheme:light dark}.rn{font:13px/1.5 -apple-system,"SF Pro Text",sans-serif;color:#1d1d1f;margin:4px 2px}.rn h1{font-size:16px;margin:0 0 10px}.rn h2{font-size:14px;margin:14px 0 6px}.rn ul{margin:6px 0;padding-left:20px}.rn li{margin-bottom:7px}.rn code{font-family:ui-monospace,Menlo,monospace;font-size:12px}@media(prefers-color-scheme:dark){.rn{color:#e8e8ed}}</style><div class="rn"><h1>Rein 0.9.1</h1>
+<p>Two Rein Remote additions (pair with Rein Remote 0.2.3 on the phone):</p>
+<ul>
+<li><b>Switch desktops from the phone.</b> ◀ / ▶ buttons on the trackpad screen move between Spaces —</li>
+</ul>
+<p>  the same thing as a three-finger swipe on the Mac's trackpad. Uses Mission Control's ⌃← / ⌃→</p>
+<p>  keyboard shortcut, so it follows whatever you've set there.</p>
+<ul>
+<li><b>Dock.</b> A Dock button on the trackpad screen opens a strip of every app that's open on the</li>
+</ul>
+<p>  Mac, with their real icons and the frontmost app marked. Tap one to bring it to the front —</p>
+<p>  no more hunting for a window with the trackpad. The control panel's Apps grid shows the real</p>
+<p>  icons too.</p>
+<p>Icons are fetched once per app and cached on the phone, so the live state stream stays as small</p>
+<p>as before. Both features work with an older phone or Mac (they simply don't appear).</p></div>
+]]></description>
+            <enclosure url="https://github.com/lukedavid2/rein-releases/releases/download/updates/Rein-0.9.1.dmg" length="66388925" type="application/octet-stream" sparkle:edSignature="5fPmyIRz0WsnoHExCRSADBMSNukltd3XP7uc8uCCn8qjyPRT0JJD6Z6oCmhfmNiw5JtE9jX+/Y2E4PQpMB6HAQ=="/>
+        </item>
+        <item>
             <title>0.9.0</title>
             <pubDate>Sat, 29 Aug 2026 11:32:45 +1200</pubDate>
             <sparkle:version>27</sparkle:version>
@@ -45,20 +70,6 @@
 </ul></div>
 ]]></description>
             <enclosure url="https://github.com/lukedavid2/rein-releases/releases/download/updates/Rein-0.8.15.dmg" length="66257522" type="application/octet-stream" sparkle:edSignature="4QCzGdAQyPDBA4Hv2CaMmXoXNp4jMS+FshIdigUh3kWapWOlTu9i9EmZgWDYHX/Lvm7OOc+tt81ab/n++hy7CA=="/>
-        </item>
-        <item>
-            <title>0.8.14</title>
-            <pubDate>Tue, 25 Aug 2026 22:38:03 +1200</pubDate>
-            <sparkle:version>25</sparkle:version>
-            <sparkle:shortVersionString>0.8.14</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<style>:root{color-scheme:light dark}.rn{font:13px/1.5 -apple-system,"SF Pro Text",sans-serif;color:#1d1d1f;margin:4px 2px}.rn h1{font-size:16px;margin:0 0 10px}.rn h2{font-size:14px;margin:14px 0 6px}.rn ul{margin:6px 0;padding-left:20px}.rn li{margin-bottom:7px}.rn code{font-family:ui-monospace,Menlo,monospace;font-size:12px}@media(prefers-color-scheme:dark){.rn{color:#e8e8ed}}</style><div class="rn"><h1>Rein 0.8.14</h1>
-<ul>
-<li><b>Fixed the 0.8.13 crash.</b> Rein could quit itself minutes after launch (typically right after a display change or wake) when the menu bar tidy checked its divider while the divider's window was momentarily off-screen. If Rein kept disappearing on you and your hidden icons came back, this was why — update and it stays running.</li>
-</ul></div>
-]]></description>
-            <enclosure url="https://github.com/lukedavid2/rein-releases/releases/download/updates/Rein-0.8.14.dmg" length="66891505" type="application/octet-stream" sparkle:edSignature="hPfTIzZiDjXJKPdG6IF6t8QCLlXiza0RmzEfrwRvYKJCkO/M72nD7A1ljIz39KLJfyBGv3Ec3l8QF68+5ei5Dg=="/>
         </item>
     </channel>
 </rss>
