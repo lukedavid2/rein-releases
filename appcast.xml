@@ -3,6 +3,30 @@
     <channel>
         <title>Rein</title>
         <item>
+            <title>0.9.2</title>
+            <pubDate>Thu, 03 Sep 2026 20:56:00 +1200</pubDate>
+            <sparkle:version>29</sparkle:version>
+            <sparkle:shortVersionString>0.9.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description><![CDATA[<style>:root{color-scheme:light dark}.rn{font:13px/1.5 -apple-system,"SF Pro Text",sans-serif;color:#1d1d1f;margin:4px 2px}.rn h1{font-size:16px;margin:0 0 10px}.rn h2{font-size:14px;margin:14px 0 6px}.rn ul{margin:6px 0;padding-left:20px}.rn li{margin-bottom:7px}.rn code{font-family:ui-monospace,Menlo,monospace;font-size:12px}@media(prefers-color-scheme:dark){.rn{color:#e8e8ed}}</style><div class="rn"><h1>Rein 0.9.2</h1>
+<p>Two fixes for the remote Dock, from first field use:</p>
+<ul>
+<li><b>Tapping a Dock app now behaves like clicking the real Dock.</b> An app that was running without</li>
+</ul>
+<p>  any windows (Chrome's background mode) previously activated invisibly — now it opens a fresh</p>
+<p>  window, and apps that aren't running launch as before.</p>
+<ul>
+<li><b>Desktop switching (◀ / ▶ on the phone) actually switches.</b> The keyboard chord is now</li>
+</ul>
+<p>  synthesized as a real hand would press it — Control key down, arrow, Control up, with the flags</p>
+<p>  genuine arrow keys carry — which the system's Mission Control layer requires. (Your Mission</p>
+<p>  Control "Move left/right a space" shortcuts must be enabled in System Settings ▸ Keyboard ▸</p>
+<p>  Shortcuts — they are by default, even if you normally swipe.)</p></div>
+]]></description>
+            <enclosure url="https://github.com/lukedavid2/rein-releases/releases/download/updates/Rein-0.9.2.dmg" length="66389544" type="application/octet-stream" sparkle:edSignature="wW/gw31rMyF3YFqbqzJmj4lR23df9zeWi3YW/hnyP5gFeNOHEsSCPXxOjZVtiFB7DOcWaC+27VDtYz+Sd1WWDw=="/>
+        </item>
+        <item>
             <title>0.9.1</title>
             <pubDate>Thu, 03 Sep 2026 17:44:35 +1200</pubDate>
             <sparkle:version>28</sparkle:version>
@@ -56,20 +80,6 @@
 <p>  for a quick manual override.</p></div>
 ]]></description>
             <enclosure url="https://github.com/lukedavid2/rein-releases/releases/download/updates/Rein-0.9.0.dmg" length="66404301" type="application/octet-stream" sparkle:edSignature="1kdwPUoBB1VtfBI6ot7CUtVbbFj5K3tQp8A/4Vl5a94KHvFgQA+f/XBzdHRxy9d8DCp8Er2hhl96n1CZybu+DA=="/>
-        </item>
-        <item>
-            <title>0.8.15</title>
-            <pubDate>Wed, 26 Aug 2026 08:05:59 +1200</pubDate>
-            <sparkle:version>26</sparkle:version>
-            <sparkle:shortVersionString>0.8.15</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<style>:root{color-scheme:light dark}.rn{font:13px/1.5 -apple-system,"SF Pro Text",sans-serif;color:#1d1d1f;margin:4px 2px}.rn h1{font-size:16px;margin:0 0 10px}.rn h2{font-size:14px;margin:14px 0 6px}.rn ul{margin:6px 0;padding-left:20px}.rn li{margin-bottom:7px}.rn code{font-family:ui-monospace,Menlo,monospace;font-size:12px}@media(prefers-color-scheme:dark){.rn{color:#e8e8ed}}</style><div class="rn"><h1>Rein 0.8.15</h1>
-<ul>
-<li><b>The crash fix, properly this time.</b> 0.8.14 guarded one bad value macOS can report for the tidy divider's window, but your Mac produced a second kind we've now seen in the wild (a window id too large to be real). Rein now treats every impossible window id as "skip this pass" instead of trusting the system's paperwork — there is no longer any code path that can trip over it.</li>
-</ul></div>
-]]></description>
-            <enclosure url="https://github.com/lukedavid2/rein-releases/releases/download/updates/Rein-0.8.15.dmg" length="66257522" type="application/octet-stream" sparkle:edSignature="4QCzGdAQyPDBA4Hv2CaMmXoXNp4jMS+FshIdigUh3kWapWOlTu9i9EmZgWDYHX/Lvm7OOc+tt81ab/n++hy7CA=="/>
         </item>
     </channel>
 </rss>
