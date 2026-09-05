@@ -3,6 +3,40 @@
     <channel>
         <title>Rein</title>
         <item>
+            <title>0.9.3</title>
+            <pubDate>Sat, 05 Sep 2026 13:34:53 +1200</pubDate>
+            <sparkle:version>30</sparkle:version>
+            <sparkle:shortVersionString>0.9.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description><![CDATA[<style>:root{color-scheme:light dark}.rn{font:13px/1.5 -apple-system,"SF Pro Text",sans-serif;color:#1d1d1f;margin:4px 2px}.rn h1{font-size:16px;margin:0 0 10px}.rn h2{font-size:14px;margin:14px 0 6px}.rn ul{margin:6px 0;padding-left:20px}.rn li{margin-bottom:7px}.rn code{font-family:ui-monospace,Menlo,monospace;font-size:12px}@media(prefers-color-scheme:dark){.rn{color:#e8e8ed}}</style><div class="rn"><h1>Rein 0.9.3</h1>
+<p><b>New: Storage.</b> A GrandPerspective-style view of where your disk space goes, in Rein's tools list.</p>
+<ul>
+<li><b>Treemap.</b> Scan Home, Downloads, Desktop, Documents, Movies or Library and get a treemap of</li>
+</ul>
+<p>  what's using space — biggest things first. Tap a folder to drill in, follow the breadcrumb back,</p>
+<p>  tap a file to reveal it in Finder.</p>
+<ul>
+<li><b>Largest items.</b> A ranked list of the biggest files and folders at whatever level you're viewing,</li>
+</ul>
+<p>  each with a size bar and a reveal-in-Finder shortcut.</p>
+<ul>
+<li><b>Reclaim space, safely.</b> One card surfaces the safe-to-clear piles — app caches, logs, Xcode</li>
+</ul>
+<p>  DerivedData and simulator caches. Clearing them <b>moves everything to the Trash</b>, never a</p>
+<p>  permanent delete, so you can always put it back. Rein refuses to touch anything outside those</p>
+<p>  known-safe locations.</p>
+<p>Storage never changes any system setting, so there's nothing to undo — and it needs no privileged</p>
+<p>helper. Scans skip folders macOS keeps private; grant Full Disk Access in System Settings ▸ Privacy</p>
+<p>for a complete picture.</p>
+<p><b>Main window hardening.</b> Two changes aimed at the "text and graphics bounce right-to-left" glitch</p>
+<p>on the Overview: the window no longer runs SwiftUI's extra min/ideal sizing passes (the two widths</p>
+<p>the misdrawn content was appearing at), and the status dot's pulse is now self-contained instead of</p>
+<p>a window-wide animation transaction. The window's 1040×600 minimum is unchanged.</p></div>
+]]></description>
+            <enclosure url="https://github.com/lukedavid2/rein-releases/releases/download/updates/Rein-0.9.3.dmg" length="66533958" type="application/octet-stream" sparkle:edSignature="Ncz9ciHUbH70AIst+AeV+V+RWNY3M4StV+Q0dAAzpa5gEd9JZuxQDOD174UIiGCBrqnj7nAZMNY/xVYhjpbrAw=="/>
+        </item>
+        <item>
             <title>0.9.2</title>
             <pubDate>Thu, 03 Sep 2026 20:56:00 +1200</pubDate>
             <sparkle:version>29</sparkle:version>
@@ -50,36 +84,6 @@
 <p>as before. Both features work with an older phone or Mac (they simply don't appear).</p></div>
 ]]></description>
             <enclosure url="https://github.com/lukedavid2/rein-releases/releases/download/updates/Rein-0.9.1.dmg" length="66388925" type="application/octet-stream" sparkle:edSignature="5fPmyIRz0WsnoHExCRSADBMSNukltd3XP7uc8uCCn8qjyPRT0JJD6Z6oCmhfmNiw5JtE9jX+/Y2E4PQpMB6HAQ=="/>
-        </item>
-        <item>
-            <title>0.9.0</title>
-            <pubDate>Sat, 29 Aug 2026 11:32:45 +1200</pubDate>
-            <sparkle:version>27</sparkle:version>
-            <sparkle:shortVersionString>0.9.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<style>:root{color-scheme:light dark}.rn{font:13px/1.5 -apple-system,"SF Pro Text",sans-serif;color:#1d1d1f;margin:4px 2px}.rn h1{font-size:16px;margin:0 0 10px}.rn h2{font-size:14px;margin:14px 0 6px}.rn ul{margin:6px 0;padding-left:20px}.rn li{margin-bottom:7px}.rn code{font-family:ui-monospace,Menlo,monospace;font-size:12px}@media(prefers-color-scheme:dark){.rn{color:#e8e8ed}}</style><div class="rn"><h1>Rein 0.9.0</h1>
-<p>Three new features, all asked for by real remote-desk use:</p>
-<ul>
-<li><b>Privacy screen.</b> Leave your Mac on for Rein Remote and lock it in person: one click in the</li>
-</ul>
-<p>  menu-bar panel (or a toggle on the phone) blacks out every screen and ignores the Mac's own</p>
-<p>  keyboard, trackpad and mouse — while your phone keeps seeing and controlling the real desktop.</p>
-<p>  Unlock by typing your passcode at the Mac (set it in Rein → Remote) or from the phone. Quitting</p>
-<p>  or restarting Rein always returns the Mac to normal — the lock can never strand you.</p>
-<ul>
-<li><b>Brightness keys drive Rein.</b> The keyboard brightness keys now adjust Rein's unified</li>
-</ul>
-<p>  brightness (with a matching on-screen indicator), so the keys and Rein's sliders can no longer</p>
-<p>  disagree about how bright your display is. ⌥⇧ gives fine steps, and the keys act on the display</p>
-<p>  under your pointer. Turn it off in Displays if you prefer the native behavior.</p>
-<ul>
-<li><b>Fan control in the menu-bar panel.</b> Auto/Manual and an RPM slider now live right under the</li>
-</ul>
-<p>  Fans row in the quick panel, next to the live CPU temperature — no need to open the full window</p>
-<p>  for a quick manual override.</p></div>
-]]></description>
-            <enclosure url="https://github.com/lukedavid2/rein-releases/releases/download/updates/Rein-0.9.0.dmg" length="66404301" type="application/octet-stream" sparkle:edSignature="1kdwPUoBB1VtfBI6ot7CUtVbbFj5K3tQp8A/4Vl5a94KHvFgQA+f/XBzdHRxy9d8DCp8Er2hhl96n1CZybu+DA=="/>
         </item>
     </channel>
 </rss>
