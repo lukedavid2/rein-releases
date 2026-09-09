@@ -3,6 +3,43 @@
     <channel>
         <title>Rein</title>
         <item>
+            <title>0.9.6</title>
+            <pubDate>Thu, 10 Sep 2026 00:36:03 +1200</pubDate>
+            <sparkle:version>33</sparkle:version>
+            <sparkle:shortVersionString>0.9.6</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description><![CDATA[<style>:root{color-scheme:light dark}.rn{font:13px/1.5 -apple-system,"SF Pro Text",sans-serif;color:#1d1d1f;margin:4px 2px}.rn h1{font-size:16px;margin:0 0 10px}.rn h2{font-size:14px;margin:14px 0 6px}.rn ul{margin:6px 0;padding-left:20px}.rn li{margin-bottom:7px}.rn code{font-family:ui-monospace,Menlo,monospace;font-size:12px}@media(prefers-color-scheme:dark){.rn{color:#e8e8ed}}</style><div class="rn"><h1>Rein 0.9.6</h1>
+<ul>
+<li><b>Virtual Devices now do what the screen says.</b> Activate a device and its sources really feed</li>
+</ul>
+<p>  it: an app source is copied into the device (the app keeps playing where it was), a microphone</p>
+<p>  source is passed through into it, and each monitor plays the device's mix on the output you</p>
+<p>  chose, at the volumes you set — all scaled by the device's master. The L/R meters on the device</p>
+<p>  card and the meter on every source are live. The status chip on the card tells you exactly what</p>
+<p>  is running ("Live · 2 sources · 1 monitor") or what's missing ("Publish to system to go live").</p>
+<ul>
+<li><b>A real channel map.</b> Publish a device with 4 or more channels and each source picks which</li>
+</ul>
+<p>  channel pair it lands on — a small patch bay for multi-track recording into one device.</p>
+<ul>
+<li><b>Fixed: routing an app to a device that has inputs.</b> Sending an app to a USB interface (or a</li>
+</ul>
+<p>  Rein device) could copy the interface's *input* back out instead of the app. Rein now finds the</p>
+<p>  right stream.</p>
+<ul>
+<li><b>Extra brightness backs off when the Mac runs hot.</b> Above 90 °C on the hottest sensor the XDR</li>
+</ul>
+<p>  boost pauses (the slider drops to hardware max and an amber note explains); it comes back below</p>
+<p>  80 °C and restores where you had it.</p>
+<ul>
+<li>Housekeeping: "Show in Activity" in Virtual Devices is a working link; the templates now</li>
+</ul>
+<p>  pre-wire the current mic / output; a placeholder view that no screen used is gone.</p></div>
+]]></description>
+            <enclosure url="https://github.com/lukedavid2/rein-releases/releases/download/updates/Rein-0.9.6.dmg" length="28130673" type="application/octet-stream" sparkle:edSignature="A9cRwokobePE5HAvionCxIf4HmAaAVYCLeDiIBBoTBQn3Y6ih2e9/3M5aR8vWzMiflmJ0mojXt7tBVMTwHj0DQ=="/>
+        </item>
+        <item>
             <title>0.9.5</title>
             <pubDate>Wed, 09 Sep 2026 23:53:18 +1200</pubDate>
             <sparkle:version>32</sparkle:version>
@@ -53,40 +90,6 @@
 <p>  with slightly simpler colour handling.</p></div>
 ]]></description>
             <enclosure url="https://github.com/lukedavid2/rein-releases/releases/download/updates/Rein-0.9.4.dmg" length="28042059" type="application/octet-stream" sparkle:edSignature="t1zIpLZP9lYLOxIWYBW9tpGs6ZaLEndWf16rCT+aHgHGXhVbilCWzVV8GhQnnK2hvKKP60LuVo/mI1IE99Y0CQ=="/>
-        </item>
-        <item>
-            <title>0.9.3</title>
-            <pubDate>Sat, 05 Sep 2026 13:34:53 +1200</pubDate>
-            <sparkle:version>30</sparkle:version>
-            <sparkle:shortVersionString>0.9.3</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<style>:root{color-scheme:light dark}.rn{font:13px/1.5 -apple-system,"SF Pro Text",sans-serif;color:#1d1d1f;margin:4px 2px}.rn h1{font-size:16px;margin:0 0 10px}.rn h2{font-size:14px;margin:14px 0 6px}.rn ul{margin:6px 0;padding-left:20px}.rn li{margin-bottom:7px}.rn code{font-family:ui-monospace,Menlo,monospace;font-size:12px}@media(prefers-color-scheme:dark){.rn{color:#e8e8ed}}</style><div class="rn"><h1>Rein 0.9.3</h1>
-<p><b>New: Storage.</b> A GrandPerspective-style view of where your disk space goes, in Rein's tools list.</p>
-<ul>
-<li><b>Treemap.</b> Scan Home, Downloads, Desktop, Documents, Movies or Library and get a treemap of</li>
-</ul>
-<p>  what's using space — biggest things first. Tap a folder to drill in, follow the breadcrumb back,</p>
-<p>  tap a file to reveal it in Finder.</p>
-<ul>
-<li><b>Largest items.</b> A ranked list of the biggest files and folders at whatever level you're viewing,</li>
-</ul>
-<p>  each with a size bar and a reveal-in-Finder shortcut.</p>
-<ul>
-<li><b>Reclaim space, safely.</b> One card surfaces the safe-to-clear piles — app caches, logs, Xcode</li>
-</ul>
-<p>  DerivedData and simulator caches. Clearing them <b>moves everything to the Trash</b>, never a</p>
-<p>  permanent delete, so you can always put it back. Rein refuses to touch anything outside those</p>
-<p>  known-safe locations.</p>
-<p>Storage never changes any system setting, so there's nothing to undo — and it needs no privileged</p>
-<p>helper. Scans skip folders macOS keeps private; grant Full Disk Access in System Settings ▸ Privacy</p>
-<p>for a complete picture.</p>
-<p><b>Main window hardening.</b> Two changes aimed at the "text and graphics bounce right-to-left" glitch</p>
-<p>on the Overview: the window no longer runs SwiftUI's extra min/ideal sizing passes (the two widths</p>
-<p>the misdrawn content was appearing at), and the status dot's pulse is now self-contained instead of</p>
-<p>a window-wide animation transaction. The window's 1040×600 minimum is unchanged.</p></div>
-]]></description>
-            <enclosure url="https://github.com/lukedavid2/rein-releases/releases/download/updates/Rein-0.9.3.dmg" length="66533958" type="application/octet-stream" sparkle:edSignature="Ncz9ciHUbH70AIst+AeV+V+RWNY3M4StV+Q0dAAzpa5gEd9JZuxQDOD174UIiGCBrqnj7nAZMNY/xVYhjpbrAw=="/>
         </item>
     </channel>
 </rss>
