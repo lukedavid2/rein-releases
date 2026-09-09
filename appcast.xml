@@ -3,6 +3,35 @@
     <channel>
         <title>Rein</title>
         <item>
+            <title>0.9.5</title>
+            <pubDate>Wed, 09 Sep 2026 23:53:18 +1200</pubDate>
+            <sparkle:version>32</sparkle:version>
+            <sparkle:shortVersionString>0.9.5</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description><![CDATA[<style>:root{color-scheme:light dark}.rn{font:13px/1.5 -apple-system,"SF Pro Text",sans-serif;color:#1d1d1f;margin:4px 2px}.rn h1{font-size:16px;margin:0 0 10px}.rn h2{font-size:14px;margin:14px 0 6px}.rn ul{margin:6px 0;padding-left:20px}.rn li{margin-bottom:7px}.rn code{font-family:ui-monospace,Menlo,monospace;font-size:12px}@media(prefers-color-scheme:dark){.rn{color:#e8e8ed}}</style><div class="rn"><h1>Rein 0.9.5</h1>
+<ul>
+<li><b>App recordings work.</b> Pressing record on an app in Audio → Apps produced an empty, 0-second</li>
+</ul>
+<p>  file. The audio tap hands Rein one interleaved stereo stream, but the processing chain was written</p>
+<p>  for a separate left and right buffer and only recorded once it had seen the second one — which</p>
+<p>  never arrived. Audio is now split into left/right on the way in and rebuilt on the way out, so</p>
+<p>  recordings (both "as heard" and "raw app audio") capture the whole take.</p>
+<ul>
+<li><b>Per-app and System EQ, balance and Audio Unit effects are now truly per-channel.</b> The same</li>
+</ul>
+<p>  fix means the equalizer no longer runs one filter across both channels' samples (which shifted</p>
+<p>  its bands upward), balance actually pans instead of turning both channels down, and a hosted</p>
+<p>  Audio Unit effect is now applied rather than skipped.</p>
+<ul>
+<li><b>Virtual Devices copy is honest.</b> With no devices configured the banner explains that the</li>
+</ul>
+<p>  default stereo "Rein Audio" loopback is what other apps see, and the button says what it does</p>
+<p>  (reset the system device) instead of "Publish 1".</p></div>
+]]></description>
+            <enclosure url="https://github.com/lukedavid2/rein-releases/releases/download/updates/Rein-0.9.5.dmg" length="28039417" type="application/octet-stream" sparkle:edSignature="Zq4Kc5iJpXEg89f9i/UnLHwANUJLTIHOCEXIJ/hNIwGlFKyX9OXpXM8SWors8jzwvtzgn1OcQ2/829BuuqWGCA=="/>
+        </item>
+        <item>
             <title>0.9.4</title>
             <pubDate>Tue, 08 Sep 2026 08:19:20 +1200</pubDate>
             <sparkle:version>31</sparkle:version>
@@ -58,30 +87,6 @@
 <p>a window-wide animation transaction. The window's 1040×600 minimum is unchanged.</p></div>
 ]]></description>
             <enclosure url="https://github.com/lukedavid2/rein-releases/releases/download/updates/Rein-0.9.3.dmg" length="66533958" type="application/octet-stream" sparkle:edSignature="Ncz9ciHUbH70AIst+AeV+V+RWNY3M4StV+Q0dAAzpa5gEd9JZuxQDOD174UIiGCBrqnj7nAZMNY/xVYhjpbrAw=="/>
-        </item>
-        <item>
-            <title>0.9.2</title>
-            <pubDate>Thu, 03 Sep 2026 20:56:00 +1200</pubDate>
-            <sparkle:version>29</sparkle:version>
-            <sparkle:shortVersionString>0.9.2</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<style>:root{color-scheme:light dark}.rn{font:13px/1.5 -apple-system,"SF Pro Text",sans-serif;color:#1d1d1f;margin:4px 2px}.rn h1{font-size:16px;margin:0 0 10px}.rn h2{font-size:14px;margin:14px 0 6px}.rn ul{margin:6px 0;padding-left:20px}.rn li{margin-bottom:7px}.rn code{font-family:ui-monospace,Menlo,monospace;font-size:12px}@media(prefers-color-scheme:dark){.rn{color:#e8e8ed}}</style><div class="rn"><h1>Rein 0.9.2</h1>
-<p>Two fixes for the remote Dock, from first field use:</p>
-<ul>
-<li><b>Tapping a Dock app now behaves like clicking the real Dock.</b> An app that was running without</li>
-</ul>
-<p>  any windows (Chrome's background mode) previously activated invisibly — now it opens a fresh</p>
-<p>  window, and apps that aren't running launch as before.</p>
-<ul>
-<li><b>Desktop switching (◀ / ▶ on the phone) actually switches.</b> The keyboard chord is now</li>
-</ul>
-<p>  synthesized as a real hand would press it — Control key down, arrow, Control up, with the flags</p>
-<p>  genuine arrow keys carry — which the system's Mission Control layer requires. (Your Mission</p>
-<p>  Control "Move left/right a space" shortcuts must be enabled in System Settings ▸ Keyboard ▸</p>
-<p>  Shortcuts — they are by default, even if you normally swipe.)</p></div>
-]]></description>
-            <enclosure url="https://github.com/lukedavid2/rein-releases/releases/download/updates/Rein-0.9.2.dmg" length="66389544" type="application/octet-stream" sparkle:edSignature="wW/gw31rMyF3YFqbqzJmj4lR23df9zeWi3YW/hnyP5gFeNOHEsSCPXxOjZVtiFB7DOcWaC+27VDtYz+Sd1WWDw=="/>
         </item>
     </channel>
 </rss>
