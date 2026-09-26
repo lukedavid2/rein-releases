@@ -3,6 +3,23 @@
     <channel>
         <title>Rein</title>
         <item>
+            <title>0.9.10</title>
+            <pubDate>Sun, 27 Sep 2026 11:15:07 +1300</pubDate>
+            <sparkle:version>39</sparkle:version>
+            <sparkle:shortVersionString>0.9.10</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description><![CDATA[<style>:root{color-scheme:light dark}.rn{font:13px/1.5 -apple-system,"SF Pro Text",sans-serif;color:#1d1d1f;margin:4px 2px}.rn h1{font-size:16px;margin:0 0 10px}.rn h2{font-size:14px;margin:14px 0 6px}.rn ul{margin:6px 0;padding-left:20px}.rn li{margin-bottom:7px}.rn code{font-family:ui-monospace,Menlo,monospace;font-size:12px}@media(prefers-color-scheme:dark){.rn{color:#e8e8ed}}</style><div class="rn"><h1>Rein 0.9.10</h1>
+<ul>
+<li><b>Email-code gate: Check just works.</b> Rein now reads everything it needs from the page's own sign-in redirect — no Cloudflare API, nothing to paste. The setup sheet shows one clear status line; the Cloudflare steps fold away until you need them.</li>
+<li><b>Your iPhone stays trusted after a browser session.</b> Allowing a second device (a laptop browser) no longer replaces the phone's saved pairing — every device you've allowed stays allowed.</li>
+<li><b>Rein Remote can show you the browser address.</b> The Mac now publishes the web remote's address to the phone; Rein Remote 0.2.5 shows it (with the Mac's name and the pairing code) in the Controls drawer.</li>
+<li><b>Web remote fills the window</b> instead of showing the Mac's screen small in a corner.</li>
+</ul></div>
+]]></description>
+            <enclosure url="https://github.com/lukedavid2/rein-releases/releases/download/updates/Rein-0.9.10.dmg" length="28965731" type="application/octet-stream" sparkle:edSignature="BpbLeMVxhYWj/5dC7jxxaFbGRhrZqPzcNnM9wunHPJWSapHzIAiLdO2QCJADHcNl5IOSXMeoYsRcB8ou42vyCg=="/>
+        </item>
+        <item>
             <title>0.9.8</title>
             <pubDate>Sun, 27 Sep 2026 09:23:44 +1300</pubDate>
             <sparkle:version>35</sparkle:version>
@@ -65,35 +82,6 @@
 <p>  pre-wire the current mic / output; a placeholder view that no screen used is gone.</p></div>
 ]]></description>
             <enclosure url="https://github.com/lukedavid2/rein-releases/releases/download/updates/Rein-0.9.6.dmg" length="28130673" type="application/octet-stream" sparkle:edSignature="A9cRwokobePE5HAvionCxIf4HmAaAVYCLeDiIBBoTBQn3Y6ih2e9/3M5aR8vWzMiflmJ0mojXt7tBVMTwHj0DQ=="/>
-        </item>
-        <item>
-            <title>0.9.5</title>
-            <pubDate>Wed, 09 Sep 2026 23:53:18 +1200</pubDate>
-            <sparkle:version>32</sparkle:version>
-            <sparkle:shortVersionString>0.9.5</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<style>:root{color-scheme:light dark}.rn{font:13px/1.5 -apple-system,"SF Pro Text",sans-serif;color:#1d1d1f;margin:4px 2px}.rn h1{font-size:16px;margin:0 0 10px}.rn h2{font-size:14px;margin:14px 0 6px}.rn ul{margin:6px 0;padding-left:20px}.rn li{margin-bottom:7px}.rn code{font-family:ui-monospace,Menlo,monospace;font-size:12px}@media(prefers-color-scheme:dark){.rn{color:#e8e8ed}}</style><div class="rn"><h1>Rein 0.9.5</h1>
-<ul>
-<li><b>App recordings work.</b> Pressing record on an app in Audio → Apps produced an empty, 0-second</li>
-</ul>
-<p>  file. The audio tap hands Rein one interleaved stereo stream, but the processing chain was written</p>
-<p>  for a separate left and right buffer and only recorded once it had seen the second one — which</p>
-<p>  never arrived. Audio is now split into left/right on the way in and rebuilt on the way out, so</p>
-<p>  recordings (both "as heard" and "raw app audio") capture the whole take.</p>
-<ul>
-<li><b>Per-app and System EQ, balance and Audio Unit effects are now truly per-channel.</b> The same</li>
-</ul>
-<p>  fix means the equalizer no longer runs one filter across both channels' samples (which shifted</p>
-<p>  its bands upward), balance actually pans instead of turning both channels down, and a hosted</p>
-<p>  Audio Unit effect is now applied rather than skipped.</p>
-<ul>
-<li><b>Virtual Devices copy is honest.</b> With no devices configured the banner explains that the</li>
-</ul>
-<p>  default stereo "Rein Audio" loopback is what other apps see, and the button says what it does</p>
-<p>  (reset the system device) instead of "Publish 1".</p></div>
-]]></description>
-            <enclosure url="https://github.com/lukedavid2/rein-releases/releases/download/updates/Rein-0.9.5.dmg" length="28039417" type="application/octet-stream" sparkle:edSignature="Zq4Kc5iJpXEg89f9i/UnLHwANUJLTIHOCEXIJ/hNIwGlFKyX9OXpXM8SWors8jzwvtzgn1OcQ2/829BuuqWGCA=="/>
         </item>
     </channel>
 </rss>
