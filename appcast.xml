@@ -3,6 +3,33 @@
     <channel>
         <title>Rein</title>
         <item>
+            <title>0.9.8</title>
+            <pubDate>Sun, 27 Sep 2026 09:23:44 +1300</pubDate>
+            <sparkle:version>35</sparkle:version>
+            <sparkle:shortVersionString>0.9.8</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description><![CDATA[<style>:root{color-scheme:light dark}.rn{font:13px/1.5 -apple-system,"SF Pro Text",sans-serif;color:#1d1d1f;margin:4px 2px}.rn h1{font-size:16px;margin:0 0 10px}.rn h2{font-size:14px;margin:14px 0 6px}.rn ul{margin:6px 0;padding-left:20px}.rn li{margin-bottom:7px}.rn code{font-family:ui-monospace,Menlo,monospace;font-size:12px}@media(prefers-color-scheme:dark){.rn{color:#e8e8ed}}</style><div class="rn"><h1>Rein 0.9.8</h1>
+<p><b>Web remote: an email code in front, no Allow prompt behind.</b></p>
+<ul>
+<li><b>Require email code.</b> Remote → Web remote → *Require email code…* puts a Cloudflare Access</li>
+</ul>
+<p>  one-time email code in front of the browser page, on your own free Cloudflare account. Rein sets</p>
+<p>  it up through the API with the token it already holds for the relay; if that token can't manage</p>
+<p>  Access, Rein shows the three dashboard steps and then picks up the result itself — nothing to paste.</p>
+<ul>
+<li><b>Browsers that sign in are approved automatically.</b> The page sends the Access sign-in it arrived</li>
+</ul>
+<p>  with; the Mac verifies it offline against your team's published keys and — only if it names your</p>
+<p>  email and this exact app — trusts the browser for the session. The code you typed *is* the</p>
+<p>  approval. Anything unverifiable still gets the ordinary Allow prompt, and a browser session never</p>
+<p>  replaces your phone's saved pairing.</p>
+<p>Also carries 0.9.7's fan work: the fan curve now reads the SoC die (the old input was a constant),</p>
+<p>a new default matched to Apple's measured behaviour, curve presets, and smoother dynamics.</p></div>
+]]></description>
+            <enclosure url="https://github.com/lukedavid2/rein-releases/releases/download/updates/Rein-0.9.8.dmg" length="28270140" type="application/octet-stream" sparkle:edSignature="cz0z0bMPTRVhkEdJcNHuo6JfJ9SqyIWqVWqIPm6wV0wUjFXupc/9X2nDe2oS6YhqORxDrfBQmgbRjB4nEMfoBA=="/>
+        </item>
+        <item>
             <title>0.9.6</title>
             <pubDate>Thu, 10 Sep 2026 00:36:03 +1200</pubDate>
             <sparkle:version>33</sparkle:version>
@@ -67,29 +94,6 @@
 <p>  (reset the system device) instead of "Publish 1".</p></div>
 ]]></description>
             <enclosure url="https://github.com/lukedavid2/rein-releases/releases/download/updates/Rein-0.9.5.dmg" length="28039417" type="application/octet-stream" sparkle:edSignature="Zq4Kc5iJpXEg89f9i/UnLHwANUJLTIHOCEXIJ/hNIwGlFKyX9OXpXM8SWors8jzwvtzgn1OcQ2/829BuuqWGCA=="/>
-        </item>
-        <item>
-            <title>0.9.4</title>
-            <pubDate>Tue, 08 Sep 2026 08:19:20 +1200</pubDate>
-            <sparkle:version>31</sparkle:version>
-            <sparkle:shortVersionString>0.9.4</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<style>:root{color-scheme:light dark}.rn{font:13px/1.5 -apple-system,"SF Pro Text",sans-serif;color:#1d1d1f;margin:4px 2px}.rn h1{font-size:16px;margin:0 0 10px}.rn h2{font-size:14px;margin:14px 0 6px}.rn ul{margin:6px 0;padding-left:20px}.rn li{margin-bottom:7px}.rn code{font-family:ui-monospace,Menlo,monospace;font-size:12px}@media(prefers-color-scheme:dark){.rn{color:#e8e8ed}}</style><div class="rn"><h1>Rein 0.9.4</h1>
-<ul>
-<li><b>System EQ is back.</b> A macOS update had silently broken the system-wide equalizer (the audio</li>
-</ul>
-<p>  tap it relied on started returning silence). The EQ now captures the system mix the same proven</p>
-<p>  way per-app audio does, so shaping your whole output works again. If an app starts playing while</p>
-<p>  the EQ is on, it joins within a second.</p>
-<ul>
-<li><b>Licence-clean ffmpeg.</b> The bundled ffmpeg is now our own LGPL build — hardware VideoToolbox</li>
-</ul>
-<p>  H.264 encoding (which casting already used) and native decoders, with the licence text and source</p>
-<p>  reference shipped in the app. No user-visible change to casting; very old HDR films may tone-map</p>
-<p>  with slightly simpler colour handling.</p></div>
-]]></description>
-            <enclosure url="https://github.com/lukedavid2/rein-releases/releases/download/updates/Rein-0.9.4.dmg" length="28042059" type="application/octet-stream" sparkle:edSignature="t1zIpLZP9lYLOxIWYBW9tpGs6ZaLEndWf16rCT+aHgHGXhVbilCWzVV8GhQnnK2hvKKP60LuVo/mI1IE99Y0CQ=="/>
         </item>
     </channel>
 </rss>
