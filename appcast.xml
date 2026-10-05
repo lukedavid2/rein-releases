@@ -3,6 +3,23 @@
     <channel>
         <title>Rein</title>
         <item>
+            <title>1.0.0</title>
+            <pubDate>Mon, 05 Oct 2026 14:08:42 +1300</pubDate>
+            <sparkle:version>40</sparkle:version>
+            <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description><![CDATA[<style>:root{color-scheme:light dark}.rn{font:13px/1.5 -apple-system,"SF Pro Text",sans-serif;color:#1d1d1f;margin:4px 2px}.rn h1{font-size:16px;margin:0 0 10px}.rn h2{font-size:14px;margin:14px 0 6px}.rn ul{margin:6px 0;padding-left:20px}.rn li{margin-bottom:7px}.rn code{font-family:ui-monospace,Menlo,monospace;font-size:12px}@media(prefers-color-scheme:dark){.rn{color:#e8e8ed}}</style><div class="rn"><h1>Rein 1.0</h1>
+<ul>
+<li><b>Rein is 1.0.</b> Thank you to everyone who ran the 0.x releases.</li>
+<li><b>The free trial is now 7 days</b> from your first launch, with every feature and no card. If you installed Rein in the last week, your trial now runs to day 7.</li>
+<li><b>Licence codes arrive in a minute.</b> Buy on Ko-fi and collect your code straight away on the claim page with the email you paid with; Ko-fi's after-payment message has the link.</li>
+<li><b>A one-time activation report.</b> When you unlock Rein with a code, it tells our licence service once that the code is in use on this Mac: the code, an anonymous identifier for the Mac (a one-way scramble of its hardware ID) and the app version. Your licence is still checked on your Mac, keeps working offline, and this report can never lock you out. Details in the privacy policy at undercoverzest.app/rein.</li>
+</ul></div>
+]]></description>
+            <enclosure url="https://github.com/lukedavid2/rein-releases/releases/download/updates/Rein-1.0.0.dmg" length="28261362" type="application/octet-stream" sparkle:edSignature="mxOzXvuiav3u0VMDECQ6yLrDQ7o8JuDlozrl9e/aMNo2YdxxVGybOSjwxZFsADyq5ipnDeJJXAcWaB1vlPtVCw=="/>
+        </item>
+        <item>
             <title>0.9.10</title>
             <pubDate>Sun, 27 Sep 2026 11:15:07 +1300</pubDate>
             <sparkle:version>39</sparkle:version>
@@ -45,43 +62,6 @@
 <p>a new default matched to Apple's measured behaviour, curve presets, and smoother dynamics.</p></div>
 ]]></description>
             <enclosure url="https://github.com/lukedavid2/rein-releases/releases/download/updates/Rein-0.9.8.dmg" length="28270140" type="application/octet-stream" sparkle:edSignature="cz0z0bMPTRVhkEdJcNHuo6JfJ9SqyIWqVWqIPm6wV0wUjFXupc/9X2nDe2oS6YhqORxDrfBQmgbRjB4nEMfoBA=="/>
-        </item>
-        <item>
-            <title>0.9.6</title>
-            <pubDate>Thu, 10 Sep 2026 00:36:03 +1200</pubDate>
-            <sparkle:version>33</sparkle:version>
-            <sparkle:shortVersionString>0.9.6</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<style>:root{color-scheme:light dark}.rn{font:13px/1.5 -apple-system,"SF Pro Text",sans-serif;color:#1d1d1f;margin:4px 2px}.rn h1{font-size:16px;margin:0 0 10px}.rn h2{font-size:14px;margin:14px 0 6px}.rn ul{margin:6px 0;padding-left:20px}.rn li{margin-bottom:7px}.rn code{font-family:ui-monospace,Menlo,monospace;font-size:12px}@media(prefers-color-scheme:dark){.rn{color:#e8e8ed}}</style><div class="rn"><h1>Rein 0.9.6</h1>
-<ul>
-<li><b>Virtual Devices now do what the screen says.</b> Activate a device and its sources really feed</li>
-</ul>
-<p>  it: an app source is copied into the device (the app keeps playing where it was), a microphone</p>
-<p>  source is passed through into it, and each monitor plays the device's mix on the output you</p>
-<p>  chose, at the volumes you set — all scaled by the device's master. The L/R meters on the device</p>
-<p>  card and the meter on every source are live. The status chip on the card tells you exactly what</p>
-<p>  is running ("Live · 2 sources · 1 monitor") or what's missing ("Publish to system to go live").</p>
-<ul>
-<li><b>A real channel map.</b> Publish a device with 4 or more channels and each source picks which</li>
-</ul>
-<p>  channel pair it lands on — a small patch bay for multi-track recording into one device.</p>
-<ul>
-<li><b>Fixed: routing an app to a device that has inputs.</b> Sending an app to a USB interface (or a</li>
-</ul>
-<p>  Rein device) could copy the interface's *input* back out instead of the app. Rein now finds the</p>
-<p>  right stream.</p>
-<ul>
-<li><b>Extra brightness backs off when the Mac runs hot.</b> Above 90 °C on the hottest sensor the XDR</li>
-</ul>
-<p>  boost pauses (the slider drops to hardware max and an amber note explains); it comes back below</p>
-<p>  80 °C and restores where you had it.</p>
-<ul>
-<li>Housekeeping: "Show in Activity" in Virtual Devices is a working link; the templates now</li>
-</ul>
-<p>  pre-wire the current mic / output; a placeholder view that no screen used is gone.</p></div>
-]]></description>
-            <enclosure url="https://github.com/lukedavid2/rein-releases/releases/download/updates/Rein-0.9.6.dmg" length="28130673" type="application/octet-stream" sparkle:edSignature="A9cRwokobePE5HAvionCxIf4HmAaAVYCLeDiIBBoTBQn3Y6ih2e9/3M5aR8vWzMiflmJ0mojXt7tBVMTwHj0DQ=="/>
         </item>
     </channel>
 </rss>
