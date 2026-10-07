@@ -3,6 +3,24 @@
     <channel>
         <title>Rein</title>
         <item>
+            <title>1.0.1</title>
+            <pubDate>Thu, 08 Oct 2026 11:16:59 +1300</pubDate>
+            <sparkle:version>42</sparkle:version>
+            <sparkle:shortVersionString>1.0.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description><![CDATA[<style>:root{color-scheme:light dark}.rn{font:13px/1.5 -apple-system,"SF Pro Text",sans-serif;color:#1d1d1f;margin:4px 2px}.rn h1{font-size:16px;margin:0 0 10px}.rn h2{font-size:14px;margin:14px 0 6px}.rn ul{margin:6px 0;padding-left:20px}.rn li{margin-bottom:7px}.rn code{font-family:ui-monospace,Menlo,monospace;font-size:12px}@media(prefers-color-scheme:dark){.rn{color:#e8e8ed}}</style><div class="rn"><h1>Rein 1.0.1</h1>
+<ul>
+<li><b>Quit Rein, and your Mac is stock again, charging included.</b> Until now a charge limit kept holding after you quit Rein, while fans, sleep and display changes were handed back. Now quitting hands back all of it: the charge limit is released the moment Rein quits, and also if Rein ever crashes. Open Rein again and your limit is back. If you updated from 1.0, quitting works straight away; the crash case starts working after your next restart, when the background helper updates.</li>
+<li><b>The charge limit works on macOS 27 again.</b> macOS 27 (and the 26.7 and 15.8 updates) no longer lets apps pause charging. On those Macs Rein now sets Apple's own Charge Limit for you (80–100%), which macOS holds itself, awake or asleep, and shows in System Settings › Battery. A limit below 80% is held by switching wall power instead: the Mac runs from its battery from the limit down to the bottom of the sailing band, then charges back up, while it is awake. The Battery page says which method your Mac is using. Quitting Rein or pressing Reset to Auto puts Apple's limit back the way you had it. If Optimized Battery Charging is on, macOS may still hold at 80% on its own.</li>
+<li><b>Battery health on macOS 27.</b> Capacity and health read correctly again (macOS moved the figures), and the temperature comes from the Mac's own sensor.</li>
+<li><b>Menu-bar tidy on macOS 27.</b> macOS 27 draws the menu bar differently, and hiding icons stopped working there. Rein's divider now uses macOS 27's own overflow to hide the icons left of it, and clicking macOS's « shows them in their usual places (macOS's own peek would draw them over the app's menus); a click on the divider, or the 15-second timer, tucks them away again. Tucking back icons that other apps move is not yet possible on 27.</li>
+<li><b>No more repeated password prompts from the remote.</b> On some Macs, using the phone remote could make macOS ask for the login keychain password many times in a row. Rein now reads each saved item once, so it can ask at most once.</li>
+</ul></div>
+]]></description>
+            <enclosure url="https://github.com/lukedavid2/rein-releases/releases/download/updates/Rein-1.0.1.dmg" length="28246888" type="application/octet-stream" sparkle:edSignature="AqLiYIZ6h7gYv8fV3hz2PGkiHYt1D3qzKzrK37Rl70rKeDrsUkWuE1n+jseeRod56c6JGJT1f4mwDrlj+U3BCQ=="/>
+        </item>
+        <item>
             <title>1.0.0</title>
             <pubDate>Mon, 05 Oct 2026 14:08:42 +1300</pubDate>
             <sparkle:version>40</sparkle:version>
@@ -35,33 +53,6 @@
 </ul></div>
 ]]></description>
             <enclosure url="https://github.com/lukedavid2/rein-releases/releases/download/updates/Rein-0.9.10.dmg" length="28965731" type="application/octet-stream" sparkle:edSignature="BpbLeMVxhYWj/5dC7jxxaFbGRhrZqPzcNnM9wunHPJWSapHzIAiLdO2QCJADHcNl5IOSXMeoYsRcB8ou42vyCg=="/>
-        </item>
-        <item>
-            <title>0.9.8</title>
-            <pubDate>Sun, 27 Sep 2026 09:23:44 +1300</pubDate>
-            <sparkle:version>35</sparkle:version>
-            <sparkle:shortVersionString>0.9.8</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<style>:root{color-scheme:light dark}.rn{font:13px/1.5 -apple-system,"SF Pro Text",sans-serif;color:#1d1d1f;margin:4px 2px}.rn h1{font-size:16px;margin:0 0 10px}.rn h2{font-size:14px;margin:14px 0 6px}.rn ul{margin:6px 0;padding-left:20px}.rn li{margin-bottom:7px}.rn code{font-family:ui-monospace,Menlo,monospace;font-size:12px}@media(prefers-color-scheme:dark){.rn{color:#e8e8ed}}</style><div class="rn"><h1>Rein 0.9.8</h1>
-<p><b>Web remote: an email code in front, no Allow prompt behind.</b></p>
-<ul>
-<li><b>Require email code.</b> Remote → Web remote → *Require email code…* puts a Cloudflare Access</li>
-</ul>
-<p>  one-time email code in front of the browser page, on your own free Cloudflare account. Rein sets</p>
-<p>  it up through the API with the token it already holds for the relay; if that token can't manage</p>
-<p>  Access, Rein shows the three dashboard steps and then picks up the result itself — nothing to paste.</p>
-<ul>
-<li><b>Browsers that sign in are approved automatically.</b> The page sends the Access sign-in it arrived</li>
-</ul>
-<p>  with; the Mac verifies it offline against your team's published keys and — only if it names your</p>
-<p>  email and this exact app — trusts the browser for the session. The code you typed *is* the</p>
-<p>  approval. Anything unverifiable still gets the ordinary Allow prompt, and a browser session never</p>
-<p>  replaces your phone's saved pairing.</p>
-<p>Also carries 0.9.7's fan work: the fan curve now reads the SoC die (the old input was a constant),</p>
-<p>a new default matched to Apple's measured behaviour, curve presets, and smoother dynamics.</p></div>
-]]></description>
-            <enclosure url="https://github.com/lukedavid2/rein-releases/releases/download/updates/Rein-0.9.8.dmg" length="28270140" type="application/octet-stream" sparkle:edSignature="cz0z0bMPTRVhkEdJcNHuo6JfJ9SqyIWqVWqIPm6wV0wUjFXupc/9X2nDe2oS6YhqORxDrfBQmgbRjB4nEMfoBA=="/>
         </item>
     </channel>
 </rss>
