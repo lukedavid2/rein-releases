@@ -3,6 +3,21 @@
     <channel>
         <title>Rein</title>
         <item>
+            <title>1.0.2</title>
+            <pubDate>Thu, 08 Oct 2026 12:43:15 +1300</pubDate>
+            <sparkle:version>43</sparkle:version>
+            <sparkle:shortVersionString>1.0.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description><![CDATA[<style>:root{color-scheme:light dark}.rn{font:13px/1.5 -apple-system,"SF Pro Text",sans-serif;color:#1d1d1f;margin:4px 2px}.rn h1{font-size:16px;margin:0 0 10px}.rn h2{font-size:14px;margin:14px 0 6px}.rn ul{margin:6px 0;padding-left:20px}.rn li{margin-bottom:7px}.rn code{font-family:ui-monospace,Menlo,monospace;font-size:12px}@media(prefers-color-scheme:dark){.rn{color:#e8e8ed}}</style><div class="rn"><h1>Rein 1.0.2</h1>
+<ul>
+<li><b>Menu-bar tidy on macOS 27 is steadier.</b> An automatic hide (at launch, after a display change, or by the timer) now happens only at the divider position you last hid from by clicking it; anywhere else Rein stays revealed and asks you to place the divider. The divider's position is measured only when it is slim, one hide runs at a time, and if macOS leaves no « button to click, Rein reveals the icons rather than leave you stuck. The revealed divider shows a › chevron; macOS's « is the hidden state.</li>
+<li><b>An optional second, always-hidden section (macOS 27).</b> Off by default. Turn on "Keep a second, always-hidden section" under the tidy settings and a second, invisible divider appears to the left of the first; icons to its left stay hidden even when the first section is shown. Click macOS's « once for your ordinary hidden icons, again for the always-hidden ones; a click on either Rein divider, or the 15-second timer, hides everything. The trade-off, stated in the setting: on the first click those icons appear for a moment before macOS folds them, because its « needs an instant with nothing hidden.</li>
+</ul></div>
+]]></description>
+            <enclosure url="https://github.com/lukedavid2/rein-releases/releases/download/updates/Rein-1.0.2.dmg" length="28243798" type="application/octet-stream" sparkle:edSignature="vkacww1DV7ZRVdL+W4FcjjUz+8F5z1fiB1yxhHbgHrCf0K8/s8XBOgB4Dd3f9X5Hb2JQFxTIyxjZD2c5TOWtDg=="/>
+        </item>
+        <item>
             <title>1.0.1</title>
             <pubDate>Thu, 08 Oct 2026 11:16:59 +1300</pubDate>
             <sparkle:version>42</sparkle:version>
@@ -36,23 +51,6 @@
 </ul></div>
 ]]></description>
             <enclosure url="https://github.com/lukedavid2/rein-releases/releases/download/updates/Rein-1.0.0.dmg" length="28261362" type="application/octet-stream" sparkle:edSignature="mxOzXvuiav3u0VMDECQ6yLrDQ7o8JuDlozrl9e/aMNo2YdxxVGybOSjwxZFsADyq5ipnDeJJXAcWaB1vlPtVCw=="/>
-        </item>
-        <item>
-            <title>0.9.10</title>
-            <pubDate>Sun, 27 Sep 2026 11:15:07 +1300</pubDate>
-            <sparkle:version>39</sparkle:version>
-            <sparkle:shortVersionString>0.9.10</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<style>:root{color-scheme:light dark}.rn{font:13px/1.5 -apple-system,"SF Pro Text",sans-serif;color:#1d1d1f;margin:4px 2px}.rn h1{font-size:16px;margin:0 0 10px}.rn h2{font-size:14px;margin:14px 0 6px}.rn ul{margin:6px 0;padding-left:20px}.rn li{margin-bottom:7px}.rn code{font-family:ui-monospace,Menlo,monospace;font-size:12px}@media(prefers-color-scheme:dark){.rn{color:#e8e8ed}}</style><div class="rn"><h1>Rein 0.9.10</h1>
-<ul>
-<li><b>Email-code gate: Check just works.</b> Rein now reads everything it needs from the page's own sign-in redirect — no Cloudflare API, nothing to paste. The setup sheet shows one clear status line; the Cloudflare steps fold away until you need them.</li>
-<li><b>Your iPhone stays trusted after a browser session.</b> Allowing a second device (a laptop browser) no longer replaces the phone's saved pairing — every device you've allowed stays allowed.</li>
-<li><b>Rein Remote can show you the browser address.</b> The Mac now publishes the web remote's address to the phone; Rein Remote 0.2.5 shows it (with the Mac's name and the pairing code) in the Controls drawer.</li>
-<li><b>Web remote fills the window</b> instead of showing the Mac's screen small in a corner.</li>
-</ul></div>
-]]></description>
-            <enclosure url="https://github.com/lukedavid2/rein-releases/releases/download/updates/Rein-0.9.10.dmg" length="28965731" type="application/octet-stream" sparkle:edSignature="BpbLeMVxhYWj/5dC7jxxaFbGRhrZqPzcNnM9wunHPJWSapHzIAiLdO2QCJADHcNl5IOSXMeoYsRcB8ou42vyCg=="/>
         </item>
     </channel>
 </rss>
